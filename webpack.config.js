@@ -1,10 +1,12 @@
-const path = require('path')
+/* eslint-disable */
 
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const path = require('path');
+
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     context: path.join(__dirname, 'src'),
-    entry: './index.tsx',
+    entry: './app.tsx',
     resolve: {
         extensions: ['.ts', '.tsx', '.js'],
     },
@@ -15,14 +17,14 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.(tsx)$/,
+                test: /\.(tsx|ts)$/,
                 loader: 'awesome-typescript-loader',
             },
         ],
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './index.html',
+            template: './app.html',
         }),
     ],
-}
+};

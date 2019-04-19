@@ -1,3 +1,3 @@
-export default interface Page {
+export default interface PageInterface {
     color: string;
 }
