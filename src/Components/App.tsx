@@ -1,9 +1,9 @@
-import * as React from "react";
-import {ReactElement} from "react";
-import PageInterface from "../PageInterface";
+import * as React from 'react';
+import TodoList from "./TodoList";
 
-export default (props: PageInterface): ReactElement =>
-    <div>
+export default (props: { color: string }): React.ReactElement =>
+    <React.Fragment>
         <h1>Welcome to React with Typescript</h1>
         <p>The color of this page is: {props.color}</p>
-    </div>
+        <TodoList/>
+    </React.Fragment>

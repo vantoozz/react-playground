@@ -10,10 +10,15 @@
     "start": "webpack-dev-server --mode development --open --hot"
   },
   "dependencies": {
+    "faker": "^4.1.0",
+    "inversify": "^5.0.1",
+    "inversify-inject-decorators": "^3.1.0",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "reflect-metadata": "^0.1.13"
   },
   "devDependencies": {
+    "@types/faker": "^4.1.5",
     "@types/react": "^16.8.13",
     "@types/react-dom": "^16.8.4",
     "@typescript-eslint/eslint-plugin": "^1.6.0",

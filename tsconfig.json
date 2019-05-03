@@ -23,10 +23,8 @@
     "strictNullChecks": true,
     "rootDir": "src",
     "baseUrl": "./",
-    "paths": {
-      "components/*": [
-        "src/components/*"
-      ]
-    }
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "types": ["reflect-metadata"]
   }
 }
